@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Write Bugs Everyday</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+</head>
+<body>
+  <div id="write-bugs"></div>
+    <script>
+      var gitment = new Gitment({
+        owner: 'writebugs',
+        repo: 'writebugs.github.io',
+        oauth: {
+          client_id: '84d7a7d373d56fc8d593',
+          client_secret: '44393f389d83b766a63f27477a9be59ba650c250',
+        },
+      })
+      gitment.render('write-bugs')
+    </script>
+</body>
+</html>
